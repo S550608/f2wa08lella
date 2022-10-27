@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-let time = 0;
+let times = 0;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  time=time+1;
-  res.send('User accesses are:' +(time));
+  times=times+1;
+  res.send('User accesses are:' +(times));
 });
 module.exports = router;
